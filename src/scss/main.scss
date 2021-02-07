@@ -1,9 +1,13 @@
 @import '~normalize.css';
 
 @import '_variables';
-@import 'modules/hello.scss';
+@import 'modules/header.scss';
 
 body {
     background: $white;
     color: $textDefault;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
