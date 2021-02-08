@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__hero-img {
+        border-radius: 50%;
+        width: 178px;
+        height: 178px;
+        border: 24px solid #f6f9fd;
+        object-fit: cover;
+        object-position: 0 0;
+        margin-top: 130px;
+    }
+    &__brace-container {
+        display: flex;
+        width: 80%;
+        &::before {
+            content: url('../assets/img/svg/brace.svg');
+        }
+        &::after {
+            content: url('../assets/img/svg/brace_right.svg');
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__title {
+        display: block;
+    }
+    &__hello-cloud {
+        display: none;
+    }
+}

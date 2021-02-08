@@ -2,6 +2,9 @@
 
 @import '_variables';
 @import 'modules/header.scss';
+@import 'modules/skill.scss';
+@import 'modules/projects.scss';
+@import 'modules/footer.scss';
 
 body {
     background: $white;
@@ -10,4 +13,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.mail-button {
+    color: $white;
+    background: $textLink;
+    border-radius: 64px;
+    padding: 4px 24px;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
 }
