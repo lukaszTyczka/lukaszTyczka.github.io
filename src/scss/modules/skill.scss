@@ -10,5 +10,28 @@
         font-size: 48px;
     }
     &-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            font-size: 64px;
+            margin-bottom: 0;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__list {
+            list-style: none;
+            &--working-knowwledge {
+                list-style-image: url('../assets/img/svg/small-tick_Green.svg');
+            }
+            &--know-something {
+                list-style-image: url('../assets/img/svg/small-tick.svg');
+            }
+            &--want-to-learn {
+                list-style: disc;
+            }
+        }
     }
 }
