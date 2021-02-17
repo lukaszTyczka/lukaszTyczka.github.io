@@ -13,9 +13,24 @@
     }
 }
 .project {
-    background: $grey1;
+    background: $grey2;
     color: $grey4;
+    width: 580px;
+    border-radius: 16px 16px 16px 16px;
+    &__header {
+        background: $grey1;
+
+        border-radius: 16px 16px 0 0;
+        &_dots {
+            padding: 16px 0 16px 16px;
+        }
+    }
     &__row {
         display: flex;
     }
+}
+
+.dot::before {
+    content: '\25CF';
+    color: $grey3;
 }
