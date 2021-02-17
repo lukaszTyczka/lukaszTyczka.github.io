@@ -1,0 +1,21 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_title {
+        font-size: 48px;
+    }
+    &_describe {
+        max-width: 782px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.project {
+    background: $grey1;
+    color: $grey4;
+    &__row {
+        display: flex;
+    }
+}
