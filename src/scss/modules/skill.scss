@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     color: $white;
+
     &__title {
         font-size: 48px;
     }
@@ -14,6 +15,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 379px;
+
         &__title {
             font-size: 64px;
             margin-bottom: 0;
@@ -23,6 +26,7 @@
         }
         &__list {
             list-style: none;
+            height: 344px;
             &--working-knowwledge {
                 list-style-image: url('../assets/img/svg/small-tick_Green.svg');
             }
@@ -33,5 +37,19 @@
                 list-style: disc;
             }
         }
+        &__list > li {
+            line-height: 30px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.skill-sections__container {
+    @media (min-width: $breakpoint-layout) {
+        max-width: 1184;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 24px;
     }
 }

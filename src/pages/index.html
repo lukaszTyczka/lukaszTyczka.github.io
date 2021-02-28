@@ -67,8 +67,12 @@
 </head>
 <body>
   <header class="header">
+    <div class="header__hello-cloud">
+      <p class="header__hello-cloud--text">Hey there! <span class="wave">👋</span></p>
+      <img class="header__hello-cloud--image" class src="../assets/img/svg/Speech_cloud.svg" alt="">
+    </div>
     <img class="header__hero-img" src="../assets/img/zdjecieProfilowe.jpg" alt="Profile photo">
-    <p class="header__hello-cloud">Hey there! 👋</p>
+
     <div class="header__brace-container">
 
       <div class="header__content">
@@ -84,53 +88,58 @@
   <main class="main">
     <section class="skill">
       <h2 class="skill__title">My skills</h2>
-      <article class="skill-section">
-        <h3 class="skill-section__title">💪</h3>
-        <p class="skill-section__subtitle">Working knowledge</p>
-        <ul class="skill-section__list skill-section__list--working-knowwledge">
-          <li>Semantic HTML5</li>
-          <li>Flexbox</li>
-          <li>Markdown</li>
-          <li>JS: Local storage</li>
-          <li>Figma</li>
-          <li>CSS grid</li>
-          <li>Forms</li>
-          <li>JS: DOM manipulations</li>
-          <li>SASS</li>
-        </ul>
-      </article>
-      <article class="skill-section">
-        <h3 class="skill-section__title">🤔</h3>
-        <p class="skill-section__subtitle">Know something about</p>
-        <ul class="skill-section__list skill-section__list--know-something">
-          <li>JavaScript ES6 + features</li>
-          <li>CSS animations</li>
-          <li>Working with API</li>
-          <li>NPM Scripts</li>
-          <li>Progressive web apps</li>
-          <li>Git</li>
-          <li>Accessibility</li>
-        </ul>
-
-      </article>
-      <article class="skill-section">
-        <h3 class="skill-section__title">🎓</h3>
-        <p class="skill-section__subtitle">Want to learn</p>
-        <ul class="skill-section__list skill-section__list--want-to-learn">
-          <li>React JS</li>
-          <li>Node JS</li>
-          <li>Electron</li>
-          <li>Server side rendering</li>
-          <li>Typecript</li>
-          <li>Gatsby</li>
-          <li>Websockets</li>
-        </ul>
-      </article>
+      <div class="skill-sections__container">
+        <article class="skill-section">
+          <h3 class="skill-section__title">💪</h3>
+          <p class="skill-section__subtitle">Working knowledge</p>
+          <ul class="skill-section__list skill-section__list--working-knowwledge">
+            <li>Semantic HTML5</li>
+            <li>Flexbox</li>
+            <li>Markdown</li>
+            <li>JS: Local storage</li>
+            <li>Figma</li>
+            <li>CSS grid</li>
+            <li>Forms</li>
+            <li>JS: DOM manipulations</li>
+            <li>SASS</li>
+          </ul>
+        </article>
+        <article class="skill-section">
+          <h3 class="skill-section__title">🤔</h3>
+          <p class="skill-section__subtitle">Know something about</p>
+          <ul class="skill-section__list skill-section__list--know-something">
+            <li>JavaScript ES6 + features</li>
+            <li>CSS animations</li>
+            <li>Working with API</li>
+            <li>NPM Scripts</li>
+            <li>Progressive web apps</li>
+            <li>Git</li>
+            <li>Accessibility</li>
+          </ul>
+        </article>
+        <article class="skill-section">
+          <h3 class="skill-section__title">🎓</h3>
+          <p class="skill-section__subtitle">Want to learn</p>
+          <ul class="skill-section__list skill-section__list--want-to-learn">
+            <li>React JS</li>
+            <li>Node JS</li>
+            <li>Electron</li>
+            <li>Server side rendering</li>
+            <li>Typecript</li>
+            <li>Gatsby</li>
+            <li>Websockets</li>
+          </ul>
+        </article>
+      </div>
     </section>
     <section class="projects">
       <h2 class="projects_title">Recent projects</h2>
-      <p class="projects_describe">I started my frontend developer path in 2020. Since then, I’ve built some projects.
-        Here’s the list of the things I’ve done so far.</h2>
+      <p class="projects_describe">I finished my studies in 2020. I'm a software developer since 2017. In my work, I
+        mainly focus on build desktop apps. Recently I got a small project to write in Angular and PHP and I like it a
+        lot. After that, I decided that creating websites, web services and other internet stuff would be my main
+        activity. So I actively working to achieve that goal. I’ve built some projects. Here’s the list of the things
+        I’ve done so far.
+        </h2>
       <div class="projects_container">
         <article class="project">
           <div class="project__header">
@@ -140,21 +149,124 @@
               <span class="dot"></span>
             </div>
           </div>
-          <div class="project__row">
-            <p class="project__tag">project:</p>
-            <p class="project__name">Project 1</p>
+          <img class="project__img" src="../assets/img/svg/VectorWhite.svg" alt="Github logo">
+          <div class="project__content-container">
+            <div class="project__main">
+              <div class="project__row">
+                <p class="project__tag">project:</p>
+                <p class="project__name">podlaski git</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">description:</p>
+                <p class="project__description">podlaskie aliasy dla gitowych komend</p>
+              </div>
+            </div>
+            <div class="project__links">
+              <div class="project__row">
+                <p class="project__tag">demo:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">see here</a>&gt;</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">github:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">source code</a>&gt;</p>
+              </div>
+            </div>
           </div>
-          <div class="project__row">
-            <p class="project__tag">description:</p>
-            <p class="project__description">Description project</p>
+        </article>
+        <article class="project">
+          <div class="project__header">
+            <div class="project__header_dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
           </div>
-          <div class="project__row">
-            <p class="project__tag">demo:</p>
-            <p class="project__demo-link">&lt;see here&gt;</p>
+          <img class="project__img" src="../assets/img/svg/VectorWhite.svg" alt="Github logo">
+          <div class="project__content-container">
+            <div class="project__main">
+              <div class="project__row">
+                <p class="project__tag">project:</p>
+                <p class="project__name">podlaski git</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">description:</p>
+                <p class="project__description">podlaskie aliasy dla gitowych komend</p>
+              </div>
+            </div>
+            <div class="project__links">
+              <div class="project__row">
+                <p class="project__tag">demo:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">see here</a>&gt;</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">github:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">source code</a>&gt;</p>
+              </div>
+            </div>
           </div>
-          <div class="project__row">
-            <p class="project__tag">github:</p>
-            <p class="project__demo-link">&lt;source code&gt;</p>
+        </article>
+        <article class="project">
+          <div class="project__header">
+            <div class="project__header_dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <img class="project__img" src="../assets/img/svg/VectorWhite.svg" alt="Github logo">
+          <div class="project__content-container">
+            <div class="project__main">
+              <div class="project__row">
+                <p class="project__tag">project:</p>
+                <p class="project__name">podlaski git</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">description:</p>
+                <p class="project__description">podlaskie aliasy dla gitowych komend</p>
+              </div>
+            </div>
+            <div class="project__links">
+              <div class="project__row">
+                <p class="project__tag">demo:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">see here</a>&gt;</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">github:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">source code</a>&gt;</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__header">
+            <div class="project__header_dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <img class="project__img" src="../assets/img/svg/VectorWhite.svg" alt="Github logo">
+          <div class="project__content-container">
+            <div class="project__main">
+              <div class="project__row">
+                <p class="project__tag">project:</p>
+                <p class="project__name">podlaski git</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">description:</p>
+                <p class="project__description">podlaskie aliasy dla gitowych komend</p>
+              </div>
+            </div>
+            <div class="project__links">
+              <div class="project__row">
+                <p class="project__tag">demo:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">see here</a>&gt;</p>
+              </div>
+              <div class="project__row">
+                <p class="project__tag">github:</p>
+                <p class="project__demo-link">&lt;<a href="#" class="project__link">source code</a>&gt;</p>
+              </div>
+            </div>
           </div>
         </article>
       </div>
