@@ -19,11 +19,17 @@
         margin-top: 128px;
         display: flex;
         column-gap: 110px;
+        @media (max-width: $breakpoint-layout) {
+            display: block;
+            .social_link {
+                margin-bottom: 64px;
+            }
+        }
     }
 }
 
 .social_link {
-    background: #fff;
+    background: $white;
     text-decoration: none;
     padding: 0;
     width: 48px;
@@ -35,5 +41,8 @@
         width: 24px;
         height: 24px;
         margin: 12px;
+    }
+    &:hover {
+        background: $cream;
     }
 }

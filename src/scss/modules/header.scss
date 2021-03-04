@@ -18,9 +18,15 @@
         width: 80%;
         &::before {
             content: url('../assets/img/svg/brace.svg');
+            @media (max-width: $breakpoint-layout) {
+                display: none;
+            }
         }
         &::after {
             content: url('../assets/img/svg/brace_right.svg');
+            @media (max-width: $breakpoint-layout) {
+                display: none;
+            }
         }
     }
     &__content {
@@ -34,7 +40,9 @@
         display: block;
     }
     &__hello-cloud {
-        // display: none;
+        @media (max-width: $breakpoint-layout) {
+            display: none;
+        }
         position: relative;
         top: 130px;
         left: 210px;
